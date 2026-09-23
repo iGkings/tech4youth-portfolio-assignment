@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f4f4f4;
+  color: #222;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: navy;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+nav a:hover {
+  color: white;
+  text-decoration: underline;
+  margin: 0 10px;
+}
+
+/* Main Content and Sections */
+main {
+  max-width: 900px;
+  margin: auto;
+}
+
+section {
+  background: white;
+  margin: 20px;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+/* Hero and button */
+
+.hero {
+  text-align: center;
+  padding: 60px 30px;
+}
+
+.button {
+  display: inline-block;
+  background: navy;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.button:hover {
+  background: rgb(77, 77, 226);
+}
+
+.myskills ul > li {
+  display: inline-block;
+  list-style: circle;
+}
+
+/* Project cards and footer */
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+
+#about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+footer {
+  text-align: center;
+  background: navy;
+  color: white;
+  padding: 15px;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 8px 0;
+  }
+
+  section {
+    margin: 10px;
+    padding: 20px;
+  }
+}
